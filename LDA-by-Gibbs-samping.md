@@ -92,10 +92,10 @@ p\left(z_{i}=\tilde{k} | \vec{z}_{\neg i}, \vec{w}\right) &=\frac{p(\vec{w}, \ve
 &
 \propto
 \frac
-{n_{\tilde{k},\neg i}^{(\tilde{t})}+\beta_{\tilde{t}}}
-{\sum_{t=1}^{V} {n_{\tilde{k},\neg i}^{(t)}}+\beta_{t}}
+{\overbrace{n_{\tilde{k},\neg i}^{(\tilde{t})}+\beta_{\tilde{t}}}^{\text{part 13}}}
+{\underbrace{\sum_{t=1}^{V} {n_{\tilde{k},\neg i}^{(t)}}+\beta_{t}}_{\text{part 14}}}
 \cdot
-{(n_{\tilde{m},\neg i}^{(\tilde{k})}+\alpha_{\tilde{k}})}
+{\underbrace {(n_{\tilde{m},\neg i}^{(\tilde{k})}+\alpha_{\tilde{k}})}_{\text{part 15}}}
 \tag{15}
 \\
 \end{align*}
