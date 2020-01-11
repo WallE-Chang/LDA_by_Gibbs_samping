@@ -85,8 +85,19 @@ p\left(z_{i}=\tilde{k} | \vec{z}_{\neg i}, \vec{w}\right) &=\frac{p(\vec{w}, \ve
 {\sum_{t=1}^{V} {n_{\tilde{k},\neg i}^{(t)}}+\beta_{t}}
 \cdot
 \frac
-{n_{\tilde{m},\neg i}^{(\tilde{k})}+\alpha_{k}}
-{\sum_{k=1}^{K} {n_{\tilde{m},\neg i}^{(k)}}+\alpha_{k}}\tag{14}
+{n_{\tilde{m},\neg i}^{(\tilde{k})}+\alpha_{\tilde{k}}}
+{\sum_{k=1}^{K} {n_{\tilde{m},\neg i}^{(k)}}+\alpha_{k}}
+\tag{14}
+\\
+&
+\propto
+\frac
+{n_{\tilde{k},\neg i}^{(\tilde{t})}+\beta_{\tilde{t}}}
+{\sum_{t=1}^{V} {n_{\tilde{k},\neg i}^{(t)}}+\beta_{t}}
+\cdot
+{(n_{\tilde{m},\neg i}^{(\tilde{k})}+\alpha_{\tilde{k}})}
+\tag{15}
+\\
 \end{align*}
 $$
 
@@ -236,7 +247,7 @@ $$
   1
   & 
   k \neq \tilde{k}\\
-  n_{\tilde{m},\neg i}^{(\tilde{k})}+\alpha_{k}
+  n_{\tilde{m},\neg i}^{(\tilde{k})}+\alpha_{\tilde{k}}
   &
   k = \tilde{k}\\
   \end{cases}
@@ -254,7 +265,7 @@ $$
   {\Gamma\left(n_{\tilde{m}}^{(k)}+\alpha_{k}\right)}
   {\Gamma\left(n_{\tilde{m},\neg i}^{(k)}+\alpha_{k}\right)}
   =
-  n_{\tilde{m},\neg i}^{(\tilde{k})}+\alpha_{k}
+  n_{\tilde{m},\neg i}^{(\tilde{k})}+\alpha_{\tilde{k}}
   \tag{13.c}
   $$
   对于 $ \text{part 12}$:
@@ -272,3 +283,4 @@ $$
   $$
   将 $\text{13.a, 13.b, 13.c, 13.d}$ 带入 $(13)$ 中得 $(14)$
 
+- $(14)$ 中 ${\sum_{k=1}^{K} {n_{\tilde{m},\neg i}^{(k)}}+\alpha_{k}}$ 与 $\tilde{k}$ 无关，是一个常量，可以舍去，得 $(15)$
